@@ -27,3 +27,15 @@ class Solution:
                 root.right = build(i1 + left_size + 1, i2, mid + 1, j2)
             return root
         return build(0,N-1,0,N-1)
+
+
+
+"""
+# Visual for the problem
+
+i1,i2 mark first and last element of preorder, j1,j2 for postorder
+
+Hash the Postorder array
+
+Recursively build by finding current i1 in postorder array, and build left tree, then right tree
+"""
